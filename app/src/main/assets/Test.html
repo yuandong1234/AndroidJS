@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>android原生和JS交互</title>
+</head>
+
+
+<body>
+<h1>简单测试一下</h1>
+<input type="button" value="js调用android 的方法" onclick="jsToAndroid()">
+<script>
+
+  <!--android 调用js方法-->
+    function androidToJS() {
+        alert("点击一下哦！");
+    }
+ <!--android 调用js方法有参-->
+     function androidToJS2(params) {
+        alert(params);
+        return params;
+    }
+    <!--js调用android方法-->
+     function jsToAndroid() {
+        test.hello("js 调用了activity 的hello()方法");
+    }
+
+</script>
+
+</body>
+</html>
